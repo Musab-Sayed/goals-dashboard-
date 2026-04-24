@@ -1,6 +1,6 @@
-const goalInput = document.getElementById('goalinput'); 
-const addBtn = document.getElementById('addbtn'); 
-const goalsContainer = document.getElementById('goalscontainer'); 
+const goalInput = document.getElementById('goalInput'); 
+const addBtn = document.getElementById('addBtn'); 
+const goalsContainer = document.getElementById('goalsContainer'); 
 
 addBtn.addEventListener('click', function() {
     let text = goalInput.value.trim();
@@ -26,11 +26,5 @@ addBtn.addEventListener('click', function() {
         
         goalsContainer.appendChild(newGoal);
         goalInput.value = "";
-    }
-});
-
-goalInput.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        addBtn.click();
     }
 });
