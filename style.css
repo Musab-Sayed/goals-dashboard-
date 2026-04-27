@@ -41,3 +41,9 @@ button:active {
   align-items: center;
   gap: 15px;
 }
+.completed {
+  text-decoration;
+line-through;
+  opacity : 0.5;
+  filter : grayscale(1);
+  transition: 0.3s;
