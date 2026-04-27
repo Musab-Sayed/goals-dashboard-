@@ -18,7 +18,7 @@ function renderGoals() {
         const newGoal = document.createElement("div");
         
         // هنا بنقرأ النص من الكائن
-        newGoal.innerText = goal.text; 
+        newGoal.innerText = goal.text || goal; 
         
         // لو الهدف محفوظ إنه "تم"، بنضيف كلاس التشطيب فوراً
         if (goal.completed) {
