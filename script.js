@@ -20,9 +20,7 @@ function renderGoals() {
         newGoal.style.marginTop = "10px";
         newGoal.style.color = "white";
         newGoal.onclick = () => {
-            goals.splice(index, 1);
-            saveToLocal();
-            renderGoals();
+           newGoal.classList.toggle('completed');
         };
         goalsContainer.appendChild(newGoal);
     });
