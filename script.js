@@ -1,10 +1,10 @@
-let goals = JSON.parse(localStorage.getItem('myGoals')) || [];
+let goals = JSON.parse(localStorage.getItem('MyGoals')) || [];
 const goalInput = document.getElementById('goalinput');
 const addBtn = document.getElementById('addbtn');
 const goalsContainer = document.getElementById('goalscontainer');
 
 function saveToLocal() {
-  localStorage.setItem('myGoals', JSON.stringify(goals));
+  localStorage.setItem('MyGoals', JSON.stringify(goals));
 }
 
 function renderGoals() {
