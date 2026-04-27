@@ -1,5 +1,5 @@
 let goals = JSON.parse(localStorage.getItem('mygoals'))||[];
-const goalInput = document.getElementById('goalinput');
+const goalInput = document.getElementById('goalInput');
 const addBtn = document.getElementById('addbtn');
 const goalsContainer = document.getElementById('goalscontainer');
 
